@@ -67,7 +67,7 @@ function Home() {
                   product.image && product.image.trim() !== ''
                     ? product.image.startsWith('http')
                       ? product.image
-                      : `http://localhost:3000${product.image}`
+                      : `${window.location.origin}${product.image}`
                     : null;
 
                 return (

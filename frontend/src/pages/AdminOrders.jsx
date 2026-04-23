@@ -146,7 +146,7 @@ function AdminOrders() {
                           item.image && item.image.trim() !== ''
                             ? item.image.startsWith('http')
                               ? item.image
-                              : `http://localhost:3000${item.image}`
+                              : `${window.location.origin}${product.image}`
                             : null;
 
                         return (
