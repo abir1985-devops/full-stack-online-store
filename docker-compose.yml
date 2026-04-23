@@ -8,6 +8,8 @@ services:
       - ./backend/.env
     ports:
       - "3000:3000"
+    volumes:
+    - uploads-data:/app/uploads    
 
   frontend:
     build:
@@ -17,4 +19,4 @@ services:
     depends_on:
       - backend
     ports:
-      - "80:80"
+      - "8081:80"
