@@ -146,7 +146,7 @@ function AdminOrders() {
                           item.image && item.image.trim() !== ''
                             ? item.image.startsWith('http')
                               ? item.image
-                              : `${window.location.origin}${product.image}`
+                              : `${window.location.origin}${item.image}`
                             : null;
 
                         return (
